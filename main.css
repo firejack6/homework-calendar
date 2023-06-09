@@ -1,0 +1,271 @@
+body {
+    background-color: #ffffe0;
+    margin: 0;
+    padding: 0;
+    width: 99.7vw;
+}
+
+p{
+    margin: 0px;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+#top-bar {
+    width: 100%;
+    height: fit-content;
+    background-color: lightblue;
+    position: relative;
+    border: 2px solid lightblue;
+    padding: 0;
+    margin: 0;
+}
+
+#header{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50vw;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+}
+
+.monthButton{
+    height: 100%;
+}
+
+#mainContainer{
+    /* height: 70vh; */
+    height: fit-content;
+    width: 80vw;
+    border: 5px double black;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50vw;
+    /* top: 40vh; */
+}
+
+.shown {
+    display: inline;
+}
+
+.hidden{
+    display: none;
+}
+
+.deletedAssignment{
+    display: none;
+    z-index: -10;
+    position: absolute;
+}
+
+#buttonContainer{
+    transform: translate(-50%,-50%);
+    border: 3px solid black;
+    padding: 3px;
+    left: 50vw;
+    width: fit-content;
+    position: absolute;
+    top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#monthText{
+    position: relative;
+}
+
+#buttonSpacer{
+    height: 1vh;
+    width: 5vw;
+    background-color: transparent;
+}
+
+.weekContainer {
+    width: 100%;
+    height: 13vh;
+    border-bottom: 3px solid black;
+    position: static;
+    display: flex;
+    background-color: grey;
+}
+
+.box {
+    width: 14.2857%;
+    height: 100%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    position: inline;
+}
+
+.weekdays{
+    height: fit-content;
+    border-top: 5px double black;
+    border-left: 5px double black;
+    border-right: 5px double black;
+    margin: 0;
+    padding-top: -1vh;
+    font-size: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80vw;
+    transform: translateX(-50%);
+    left: 50vw;
+    position: relative;
+    text-align: center;
+
+    /* transform: translateY(-20%); */
+}
+
+.weekdaytext{
+    width: 14.2857%;
+    height: 100%;
+    /* border: 2px solid black; */
+}
+
+
+.today{
+    background-color: lightblue;
+}
+
+.assignment{
+    border: 1px solid black;
+    font-size: 1.75vh;
+    background-color: white;
+    position: relative;
+}
+
+.assignmentDone{
+    background-color: lightgreen;
+}
+
+.addButton{
+    background-color: blueviolet;
+    width: 100%;
+    opacity: 0;
+    height: 2.25vh;
+    line-height: 2vh;
+}
+
+.addButtonHover{
+    opacity: 100;
+}
+
+.deleteButton{
+    background-color: red;
+    width: 25%;
+    right: 0;
+    opacity: 0%;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    font-size: 75%;
+    height: 100%;
+    line-height: 100%;
+}
+
+.deleteButtonHover{
+    opacity: 100;
+    cursor: pointer;
+}
+
+.completeButton{
+    background-color: green;
+    width: 25%;
+    left: 0;
+    opacity: 0%;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    font-size: 75%;
+    height: 100%;
+    line-height: 100%;
+}
+
+.completeButtonHover{
+    opacity: 100;
+    cursor: pointer;
+
+}
+
+.popupAddAssignment{
+    width: 300px;
+    height: 200px;
+    background-color: beige;
+}
+
+#popuplocation{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50vh;
+    left: 50vw;
+    z-index: 2;
+    width: fit-content;
+    height: fit-content;
+    /* background-color: white; */
+}
+
+#iframeContainer{
+    z-index: 10;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50vh;
+    left: 50vw;
+    height: 25vh;
+    background-color: whitesmoke;
+}
+
+#addButtonTop{
+    position: absolute;
+    right: 10vw;
+    top: 5vh;
+}
+
+#buttonCont{
+    position: absolute;
+    left: 10vw;
+    top: 5vh;
+}
+
+#closeButton{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: red;
+    transform: translate(-50%,50%);
+}
+
+.EVENT{
+    background-color: khaki;
+}
+
+.ROCKETS{
+    background-color: orange;
+}
+
+.editButton{
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    opacity: 0%;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+}
+
+.editButtonHover{
+    background-color: grey;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.assnCont{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="popup.css" type="text/css"/>
+<script type="text/javascript" src="addAssignment.js"></script>
+<script type="text/javascript" src="calendar.js"></script>
+<script type="text/javascript" src="popup.js"></script>
+
+<body >
+    <div>
+        <p id="title">New Assignment</p>
+        <div>
+            <label for="nameEntry">Name:</label>
+            <input type="text" id="nameEntry" name="nameEntry">
+        </div>
+        <div>
+            <label for="dateEntry">Due Date:</label>
+            <input type="text" id="dateEntry" name="dateEntry" placeholder="currentDate">
+            <input type="text" id="monthEntry" name="monthEntry" placeholder="currentMonth">
+            <input type="text" id="yearEntry" name="yearEntry" placeholder="currentYear">
+            
+        </div>
+        <div>
+            <label for="timeEntry">Due Time:</label>
+            <input type="text" id="timeEntry" name="timeEntry" placeholder="currentTime">
+        </div>
+        <div>
+            <label for="classEntry">Class:</label>
+            <select name="classEntry" id="classEntry">
+            </select>
+        </div>
+        <div>
+            <button type="button" onclick="submitAssignment()" id="submitButton">Submit</button>
+        </div>
+    </div>
+</body>

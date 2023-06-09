@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Calendar</title>
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <script type="text/javascript" src="months.json"></script>
+    <script type="text/javascript" src="addAssignment.js"></script>
+    <script type="text/javascript" src="calendar.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Pragma" content="no-store" />
+    <meta http-equiv="Expires" content="0" />
+
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0" />
+
+    </head>
+
+    <body onload = "mainCalendar()">
+        <div id="top-bar">
+            <div id="header">
+                <button onclick="cycleBackward()" class="monthButton">&#8592</button>
+                <h2 id="monthText">Homework Calendar</h2>
+                <button onclick="cycleForward()" class="monthButton">&#8594</button>
+            </div>
+            <div style="display: flex; flex-direction: row;" id="buttonCont">
+                <button type="button" id="refreshButton" onclick="mainCalendar()" class="hidden">Refresh</button>
+                <button type="button" id="hideAssignments" onclick="hideAssignments()" value="0">Hide Assignments</button>
+                <button type="button" id="hideEvents" onclick="hideEvents()" value="0">Hide Events</button>
+            </div>
+            <button type="button" id="addButtonTop">Add Assignment</button>
+        </div>
+
+        <div id="iframeContainer" class="hidden">
+            <iframe id="iframe" title="ya" src="popup.html" height="100%" width="100%"></iframe>
+            <div>
+                <button id="closeButton" onclick="hideFrame()">x</button>
+            </div>
+        </div>
+
+        <div class="weekdays">
+            <p class="weekdaytext">Sunday</p>
+            <p class="weekdaytext">Monday</p>
+            <p class="weekdaytext">Tuesday</p>
+            <p class="weekdaytext">Wednesday</p>
+            <p class="weekdaytext">Thursday</p>
+            <p class="weekdaytext">Friday</p>
+            <p class="weekdaytext">Saturday</p>
+        </div>
+        <div id="mainContainer">
+            <form id="Jan" class="month"></form>
+            <form id="Feb" class="month"></form>
+            <form id="Mar" class="month"></form>
+            <form id="Apr" class="month"></form>
+            <form id="May" class="month"></form>
+            <form id="Jun" class="month"></form>
+            <form id="Jul" class="month"></form>
+            <form id="Aug" class="month"></form>
+            <form id="Sep" class="month"></form>
+            <form id="Oct" class="month"></form>
+            <form id="Nov" class="month"></form>
+            <form id="Dec" class="month"></form>
+        </div>
+        
+    </body>
+
+</html>
